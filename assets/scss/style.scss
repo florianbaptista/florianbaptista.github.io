@@ -1,0 +1,366 @@
+$light: #f9F7F0;
+$background: #46575E;
+$dark: #304046;
+
+body {
+    background-color: $light;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    h2 {
+        text-align: center;
+        font-size: 2.6em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    /* navigation */
+    nav {
+        ul {
+            border-bottom: 1px solid $dark;
+            background-color: $background;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 0;
+
+
+            li {
+                padding-left: 2em;
+                padding-right: 2em;
+
+                a {
+                    text-decoration: none;
+                    color: $light;
+
+                    &:hover {
+                        color: #83BCFF;
+                    }
+                }
+            }
+        }
+
+    }
+
+    /* Section home */
+    #home {
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $background;
+            padding: 10px;
+            color: $light;
+            min-height: 88.5vh;
+
+            #dev {
+                text-align: left;
+                margin-top: 0;
+                font-size: 2.5em;
+            }
+
+            .photo {
+                @media screen and (max-width: 800px) {
+                    width: 100%;
+                }
+
+                @media screen and (min-width : 800px) {
+                    width: 75%;
+                }
+
+                border-radius: 22% 78% 16% 84% / 38% 61% 39% 62%;
+                -webkit-box-shadow: inset -1px 3px 8px 5px $dark,
+                2px 5px 16px 0px $dark,
+                5px 5px 15px 5px rgba(0, 0, 0, 0);
+                box-shadow: inset -1px 3px 8px 5px $dark,
+                2px 5px 16px 0px $dark,
+                5px 5px 15px 5px rgba(255, 0, 0, 0);
+            }
+
+            .photoText {
+                padding: 2em;
+
+                h1 {
+                    font-size: 3em;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    line-height: 1.5em;
+
+                    strong {
+                        font-weight: bolder;
+                    }
+                }
+
+                .homeContact {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    p {
+                        margin: 0;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: $light;
+                        transition: all 1.5s ease;
+
+                        &:hover {
+                            color: #83BCFF;
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    /* fin de la section home */
+    /* section skills */
+    #skills {
+        height: 88.5vh;
+        align-items: center;
+
+        .skillsBlock1 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .skillsBlock2 {
+            display: flex;
+            justify-content: space-around;
+
+            .heightText {
+                line-height: 2em;
+                text-align: center;
+            }
+        }
+
+        .titleSkills {
+            font-size: 2.1em;
+        }
+
+        div {
+
+            img {
+
+                width: 4.5em;
+            }
+        }
+
+        .toolsImg {
+            width: 4.5em;
+        }
+
+        .softwareImg {
+            width: 4.5em;
+        }
+    }
+
+    /* fin de la section skills */
+    /*section portfolio */
+    #portfolio {
+        height: 88.5vh;
+        display: flex;
+        justify-content: space-around;
+        background-color: $dark;
+        align-items: center;
+
+        .card {
+            width: 300px;
+            height: 400px;
+            /*1*/
+            margin: 0px auto;
+            /*2*/
+            background-color: white;
+            /*3*/
+            box-shadow: 0px 5px 20px #999;
+            /*4*/
+
+            a {
+                /*5*/
+                color: $dark;
+                text-decoration: none;
+
+                .card-image {
+                    height: 150px;
+                    /*1*/
+                    position: relative;
+                    /*2*/
+                    overflow: hidden;
+                    /*3*/
+
+                    img {
+                        width: 150%;
+                        /*5 - Méthode de centrage en fonction de la taille de l'image */
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
+                        transition: transform .1s;
+                    }
+
+                    img:hover {
+                        transform: scale(1.5);
+                    }
+                }
+
+                .card-body {
+                    text-align: center;
+                    /*1*/
+                    padding: 10px 15px;
+                    /*2*/
+                    box-sizing: border-box;
+                    /*3*/
+
+                    .card-date {
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: $dark;
+                    }
+
+                    .card-title {
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+
+                    .card-excerpt {
+                        color: $dark;
+                    }
+                }
+            }
+        }
+    }
+
+    /* fin de la section portfolio */
+    /* section experience */
+    #experience {
+        height: 88.5vh;
+        display: flex;
+        justify-content: space-around;
+
+        .textExp {
+            font-size: 1.4em;
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 0;
+        }
+
+        .titleExp {
+            font-size: 2.1em;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 0.4em;
+        }
+
+        .computerBlock {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            .expBlock1 {
+                display: flex;
+                justify-content: space-around;
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            .expBlock4 {
+                display: flex;
+                justify-content: space-around;
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+
+        .otherBlock {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            .expBlock2 {
+                display: flex;
+                justify-content: space-around;
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            .expBlock3 {
+                display: flex;
+                justify-content: space-around;
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/* fin de la section experience */
+/* Responsive */
+@media all and (max-width: 800px) {
+    body {
+        font-size: 0.8em;
+
+        nav {
+            display: none;
+        }
+
+        header {
+            flex-flow: column wrap;
+
+        }
+
+        #skills {
+            height: auto;
+
+            .skillsBlock1 {
+                flex-flow: column;
+                text-align: center;
+            }
+
+            .skillsBlock2 {
+                flex-flow: column;
+                text-align: center;
+            }
+        }
+
+        #portfolio {
+            flex-flow: column;
+            height: auto;
+
+            .card {
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+        }
+
+        #experience {
+            flex-flow: column;
+            align-items: center;
+            height: auto;
+
+            .otherBlock {
+                .expBlock3 {
+                    flex-flow: column;
+                }
+            }
+        }
+    }
+}

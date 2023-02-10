@@ -1,0 +1,83 @@
+body {
+  background-color: #f9F7F0;
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Section home */
+  /* fin de la section home */
+}
+body nav ul {
+  border-bottom: 1px solid #304046;
+  background-color: #46575E;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0;
+}
+body nav ul li {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+body nav ul li a {
+  text-decoration: none;
+  color: #f9F7F0;
+}
+body nav ul li a:hover {
+  color: #83BCFF;
+}
+body #home header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #46575E;
+  padding: 10px;
+  color: #f9F7F0;
+  height: 88.5vh;
+}
+body #home header .photo {
+  width: 465px;
+  border-radius: 22% 78% 16% 84%/38% 61% 39% 62%;
+  box-shadow: inset -1px 3px 8px 5px #304046, 2px 5px 16px 0px #304046, 5px 5px 15px 5px rgba(255, 0, 0, 0);
+}
+body #home header .photoText {
+  padding: 2em;
+}
+body #home header .photoText h1 {
+  font-size: 2em;
+}
+body #home header .photoText p {
+  line-height: 1.5em;
+}
+body #home header .photoText p strong {
+  font-weight: bolder;
+}
+body #home header .photoText .homeContact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body #home header .photoText .homeContact a {
+  text-decoration: none;
+  color: #f9F7F0;
+}
+body #home header .photoText .homeContact a:hover {
+  color: #83BCFF;
+}
+body #skills {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+}
+body #skills div img {
+  width: 50px;
+  height: 50px;
+}
+body #skills .toolsImg {
+  width: 50px;
+  height: 50px;
+}
+body #skills .softwareImg {
+  width: 50px;
+}/*# sourceMappingURL=style.css.map */
