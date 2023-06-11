@@ -38,7 +38,8 @@
                     entreprise.
                 </p>
                 <p>
-                    Curiosité, motivation associées à un bon relationnel sont mes atouts pour réussir mon projet professionnel
+                    Curiosité, motivation associées à un bon relationnel sont mes atouts pour réussir mon projet
+                    professionnel
                 </p>
                 <div class="homeContact">
                     <p>
@@ -68,13 +69,17 @@
         <div class="skillsBlock1">
             <div>
                 <p class="titleSkills">Langages :</p>
-                <img class="languageImg" src="assets/img/html-5.png" alt="html">
-                <img class="languageImg" src="assets/img/bootstrap.png" alt="bootstrap">
-                <img class="languageImg" src="assets/img/css-3.png" alt="css">
-                <img class="languageImg" src="assets/img/sass.png" alt="scss">
-                <img class="languageImg" src="assets/img/js.png" alt="js">
-                <img class="languageImg" src="assets/img/php.png" alt="php">
-                <img class="languageImg" src="assets/img/c-sharp-c.png"  alt="c#">
+                <div>
+                    <img src="assets/img/html-5.png" alt="html">
+                    <img src="assets/img/css-3.png" alt="css">
+                    <img src="assets/img/bootstrap.png" alt="bootstrap">
+                    <img src="assets/img/sass.png" alt="scss">
+                </div>
+                <div class="langBack">
+                    <img src="assets/img/js.png" alt="js">
+                    <img src="assets/img/php.png" alt="php">
+                    <img src="assets/img/c-sharp-c.png" alt="c#">
+                </div>
             </div>
             <div>
                 <p class="titleSkills">Outils :</p>
@@ -88,23 +93,22 @@
             </div>
         </div>
         <div class="skillsBlock2">
-
             <div>
                 <p class="titleSkills">Langues :</p>
-                <p class="heightText">
-                    Anglais<br>
-                    Espagnol<br>
-                    Portugais<br>
-                </p>
+                <div class="heightText">
+                    <p>Anglais</p>
+                    <p>Espagnol</p>
+                    <p>Portugais</p>
+                </div>
             </div>
             <div>
                 <p class="titleSkills">Atouts :</p>
-                <p class="heightText">
-                    Esprit d'équipe<br>
-                    Patient<br>
-                    Curieux<br>
-                    Autonome<br>
-                </p>
+                <div class="heightText">
+                    <p>Esprit d'équipe</p>
+                    <p>Patient</p>
+                    <p>Curieux</p>
+                    <p>Autonome</p>
+                </div>
                 <!-- <p class="titleSkills">Compétences informatique :</p>
                 <p class="heightText">
                     Conception de site internet<br>
@@ -116,25 +120,246 @@
         </div>
     </section>
     <!-- portfolio -->
-    <h2>Portfolio</h2>
     <section id="portfolio">
-        <h3>Site réalisé en CRUD :</h3>
-        <div class="port1">
-            <img src="/assets/img/TfHome.png" alt="Accueil">
-            <img src="/assets/img/TfPost1.png" alt="Post">
-            <img src="/assets/img/TfPost2.png" alt="Article">
-            <img src="/assets/img/TfAddPost.png" alt="Ajouter">
-            <img src="/assets/img/TfComment.png" alt="Commentaire">
-            <img src="/assets/img/TfProfil.png" alt="Profil">
-            <img src="/assets/img/TfEditPost.png" alt="Modification">
+        <h2>Portfolio</h2>
+        <h3>Réalisé en CRUD :</h3>
+        <div class="card">
+            <img src="/assets/img/TfHome.png" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h3><b>Travel Finder</b></h3>
+                <p>Site de voyage</p>
+                <button class="open-modal-btn" id="buttonMod">Voir plus</button>
+            </div>
         </div>
-        <h3>Site réalisé sur Wordpress :</h3>
-        <div class="port1">
-            <img src="/assets/img/projet_wordpress.png" alt="Accueil">
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <div>
+                    <img src="/assets/img/TfHome.png" alt="Ceci est l'image d'illustration de l'accueil">
+                </div>
+                <button class="accordion">Page d'accueil</button>
+                <div class="panel">
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat.</p> -->
+                    <div>
+                        <img src="/assets/img/TfPost1.png"
+                            alt="Ceci est la première image d'article trier par catégorie en forme de card">
+                        <img src="/assets/img/TfPost2.png"
+                            alt="Ceci est la deuxième image d'article trier par catégorie en forme de card">
+                        <img src="/assets/img/TfPost3.png"
+                            alt="Ceci est la troisième image d'article trier par catégorie en forme de card">
+                    </div>
+                </div>
+
+                <button class="accordion">Page liste d'articles</button>
+                <div class="panel">
+                    <div>
+                        <img src="/assets/img/TfListPost1.png"
+                            alt="Ceci est la première image, une liste d'article en forme de card">
+                        <img src="/assets/img/TfListPost2.png"
+                            alt="Ceci est la deuxième image, une liste d'article en forme de card">
+                        <img src="/assets/img/TfPostId1.png"
+                            alt="Ceci est la troisième image, le haut de la page de l'article avec le titre, le pays, la date de publication, la categorie et en dessous l'image de l'article">
+                        <img src="/assets/img/TfPostId3.png"
+                            alt="Ceci est la quatrième image, le millieu de la page de l'article avec en haut l'image de l'article, le contenu et en bas le commentaire">
+                        <img src="/assets/img/TfPostId2.png"
+                            alt="Ceci est la cinquième image, la bas de la page de l'article avec le commentaire, l'utilisateur, la date de publication, le contenu avec en dessous le formulaire du commentaire">
+                    </div>
+                </div>
+
+                <button class="accordion">Page profil</button>
+                <div class="panel">
+                    <div>
+                        <img src="/assets/img/TfProfil.png" alt="Ceci est la première image qui représente le profil">
+                        <img src="/assets/img/TfEditPost.png"
+                            alt="Ceci est la deuxième image qui représente le formulaire de modification de l'article">
+                        <img src="/assets/img/TfEditProfil.png"
+                            alt="Ceci est la troisième image qui représente le formulaire de modification ddu profil">
+                    </div>
+                </div>
+
+                <button class="accordion">Page d'ajout d'articles</button>
+                <div class="panel">
+                    <div>
+                        <img src="/assets/img/TfAddPost.png"
+                            alt="Ceci est la première image qui représente le formulaire d'ajout de l'article">
+                        <img src="/assets/img/TfAddPost1.png"
+                            alt="Ceci est la deuxième image qui représente le formulaire d'ajout de l'article">
+                    </div>
+                </div>
+
+                <button class="accordion">Page connexion & inscription</button>
+                <div class="panel">
+                    <div>
+                        <img src="/assets/img/TfLogin.png"
+                            alt="Ceci est la première image qui représente le formulaire de connexion">
+                        <img src="/assets/img/TfRegister.png"
+                            alt="Ceci est la deuxième image qui représente le formulaire d'inscription">
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <h3>Site réalisé sur Bootstrap :</h3>
-        <div class="port1">
-            <img src="/assets/img/projet_bootstrap.png" alt="Accueil">
+        <h3>Réalisé sur Wordpress :</h3>
+        <div class="card">
+            <img src="/assets/img/PwHome1.png" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h3><b>Travel Finder</b></h3>
+                <p>Site de voyage</p>
+                <button class="open-modal-btn-two" id="buttonMod">Voir plus</button>
+            </div>
+        </div>
+
+        <div id="modalTwo" class="modal">
+            <div class="modal-content">
+                <span class="close-btn-two">&times;</span>
+                <div>
+                    <img src="/assets/img/PwHome1.png" alt="Ceci est l'image d'illustration de l'accueil">
+                </div>
+                <button class="accordion">Page d'accueil</button>
+                <div class="panel">
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat.</p> -->
+                    <div>
+                        <img src="/assets/img/PwHome1.png"
+                            alt="Ceci est la première image de l'accueil">
+                        <img src="/assets/img/PwHome2.png"
+                            alt="Ceci est la deuxième image de l'accueil">
+                    </div>
+                </div>
+
+                <button class="accordion">Page actualité</button>
+                <div class="panel">
+                    <div>
+                        <img src="/assets/img/PwActu1.png"
+                            alt="Ceci est la première image d'articles">
+                        <img src="/assets/img/PwActu2.png"
+                            alt="Ceci est la deuxième image d'articles">
+                        <img src="/assets/img/PwActu3.png"
+                            alt="Ceci est la troisième image d'articles">
+                        <img src="/assets/img/PwActu4.png"
+                            alt="Ceci est la quatrième image d'articles">
+                        <img src="/assets/img/PwActu5.png"
+                            alt="Ceci est la cinquième image d'articles">
+                        <img src="/assets/img/PwActu6.png"
+                            alt="Ceci est la sixième image d'articles">
+                        <img src="/assets/img/PwActu7.png"
+                            alt="Ceci est la septième image d'articles">
+                        <img src="/assets/img/PwActu8.png"
+                            alt="Ceci est la huitième image d'articles">
+                    </div>
+                </div>
+
+                <button class="accordion">Page boutique</button>
+                <div class="panel">
+                    <div>
+                        <img src="/assets/img/PwShop1.png" alt="Ceci est la première image qui représente la boutique">
+                        <img src="/assets/img/PwShop2.png" alt="Ceci est la deuxième image qui représente la boutique">
+                        <img src="/assets/img/PwShop3.png" alt="Ceci est la troisième image qui représente la boutique">
+                    </div>
+                </div>
+
+                <button class="accordion">Page contact</button>
+                <div class="panel">
+                    <div>
+                        <img src="/assets/img/PwContact1.png"
+                            alt="Ceci est la première image qui représente le formulaire de contact">
+                        <img src="/assets/img/PwContact2.png"
+                            alt="Ceci est la deuxième image qui représente le formulaire de contact">
+                    </div>
+                </div>
+
+                <button class="accordion">Page réalisation</button>
+                <div class="panel">
+                    <div>
+                        <img src="/assets/img/PwRea1.png"
+                            alt="Ceci est la première image qui représente la réalisation">
+                        <img src="/assets/img/PwRea2.png"
+                            alt="Ceci est la deuxième image qui représente la réalisation">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <h3>Réalisé sur Bootstrap :</h3>
+        <div class="card">
+            <img src="/assets/img/UfAccueil1.png" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h3><b>Ultra Festivale</b></h3>
+                <p>Site vitrine</p>
+                <button class="open-modal-btn-one" id="buttonMod">Voir plus</button>
+            </div>
+        </div>
+
+        <div id="modalOne" class="modal">
+            <div class="modal-content">
+                <span class="close-btn-one">&times;</span>
+                <div>
+                    <img src="/assets/img/UfAccueil1.png" alt="Ceci est l'image d'illustration de l'accueil">
+                </div>
+
+                <button class="accordion">Page d'accueil</button>
+                <div class="panel">
+                    <div>
+                        <img src="/assets/img/UfAccueil1.png" alt="Ceci est la première image, de l'accueil">
+                        <img src="/assets/img/UfAccueil2.png" alt="Ceci est la deuxième image, de l'accueil">
+                    </div>
+                </div>
+
+                <button class="accordion">Page Billeterie</button>
+                <div class="panel">
+                    <div>
+                        <img src="/assets/img/UfBillet1.png"
+                            alt="Ceci est la première image qui représente la billeterie">
+                        <img src="/assets/img/UfBillet2.png"
+                            alt="Ceci est la deuxième image qui représente la billeterie">
+                    </div>
+                </div>
+
+                <button class="accordion">Page Planning</button>
+                <div class="panel">
+                    <div>
+                        <img src="/assets/img/UfHoraire.png"
+                            alt="Ceci est la première image qui représente les horaires">
+                    </div>
+                </div>
+
+                <button class="accordion">Page Artistes</button>
+                <div class="panel">
+                    <div>
+                        <img src="/assets/img/UfArtist.png"
+                            alt="Ceci est la première image qui représente les artistes">
+                        <img src="/assets/img/UfArtist1.png"
+                            alt="Ceci est la deuxième image qui représente les artistes">
+                    </div>
+                </div>
+
+                <button class="accordion">Page Restauration</button>
+                <div class="panel">
+                    <div>
+                        <img src="/assets/img/UfMenu1.png"
+                            alt="Ceci est la première image qui représente la restauration">
+                        <img src="/assets/img/UfMenu2.png"
+                            alt="Ceci est la deuxième image qui représente la restauration">
+                    </div>
+                </div>
+
+                <button class="accordion">Page Shop</button>
+                <div class="panel">
+                    <div>
+                        <img src="/assets/img/UfShop.png" alt="Ceci est la première image qui représente le shop">
+                        <img src="/assets/img/UfShop1.png" alt="Ceci est la deuxième image qui représente le shop">
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
     <!-- Experience -->
@@ -164,7 +389,7 @@
                             <strong>Développeur .NET</strong>
                         </p>
                         <p>
-                            La Manu Ecole supérieure des métiers du numérique 
+                            La Manu Ecole supérieure des métiers du numérique
                         </p>
                         <p>
                             Compiègne
@@ -295,7 +520,7 @@
     <footer>
 
     </footer>
-    <script src="https://kit.fontawesome.com/39f2e7a374.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesomem/39f2e7a374.js" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
